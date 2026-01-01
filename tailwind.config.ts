@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        clock: ['JetBrains Mono', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        clock: {
+          face: "hsl(var(--clock-face))",
+          digits: "hsl(var(--clock-digits))",
+          seconds: "hsl(var(--clock-seconds))",
+          glow: "hsl(var(--clock-glow))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,25 +75,42 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "flip-top": {
+          "0%": { transform: "rotateX(0deg)" },
+          "100%": { transform: "rotateX(-90deg)" },
+        },
+        "flip-bottom": {
+          "0%": { transform: "rotateX(90deg)" },
+          "100%": { transform: "rotateX(0deg)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "0.5" },
+          "50%": { opacity: "1" },
+        },
+        "tick": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "flip-top": "flip-top 0.3s ease-in-out",
+        "flip-bottom": "flip-bottom 0.3s ease-in-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "tick": "tick 0.1s ease-out",
+      },
+      boxShadow: {
+        'glass': '0 8px 32px hsl(var(--glass-shadow))',
+        'glow': '0 0 20px hsl(var(--clock-glow) / 0.5)',
+        'glow-lg': '0 0 40px hsl(var(--clock-glow) / 0.5)',
       },
     },
   },
