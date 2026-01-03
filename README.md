@@ -1,73 +1,116 @@
-# Welcome to your Lovable project
+# 🐼 Panda Time
 
-## Project info
+A lovable, modern web project built with **React**, **Vite**, **TypeScript**, **Tailwind CSS** and **shadcn-ui**.  
+This project is a starting template you can use to build beautiful, responsive interfaces quickly.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- ⚡️ Fast development with **Vite**
+- 🧠 Fully typed with **TypeScript**
+- 🎨 Tailwind CSS for utility-first styling
+- 🪶 shadcn-ui components for UI building blocks
+- 🧩 Clean, modular folder structure
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Clone the repo
 
-**Use your preferred IDE**
+```bash
+git clone https://github.com/Panda-Pikachu/panda-time.git
+cd panda-time
+💻 Development
+Install dependencies
+Using npm:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+bash
+Copy code
+npm install
+Or with pnpm:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+bash
+Copy code
+pnpm install
+Or with yarn:
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+bash
+Copy code
+yarn
+Start the dev server
+bash
+Copy code
 npm run dev
-```
+or:
 
-**Edit a file directly in GitHub**
+bash
+Copy code
+pnpm dev
+or:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+bash
+Copy code
+yarn dev
+Your site will be available at http://localhost:5173 by default.
 
-**Use GitHub Codespaces**
+🧪 Useful OS / CLI Commands
+🗂 Explore files
+bash
+Copy code
+ls -la          # list all files
+tree -L 2       # show directory tree (install tree if missing)
+🧹 Clean & Reset
+bash
+Copy code
+rm -rf node_modules        # delete installed packages
+rm -f package-lock.json    # remove npm lock file
+npm cache clean --force    # force clear npm cache
+On Linux/macOS use rm, on Windows PowerShell use Remove-Item node_modules -Recurse
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+📦 Install Specific Package
+bash
+Copy code
+npm i axios                  # install axios
+npm i -D tailwindcss postcss # install TailwindCSS tooling
+📌 Git Helpers
+bash
+Copy code
+git status                    # check repo status
+git add .                     # stage all changes
+git commit -m "feat: update"  # commit with message
+git push origin main          # push to remote
+📦 Build & Preview
+Create a production build
+bash
+Copy code
+npm run build
+Output will be in the dist/ folder.
 
-## What technologies are used for this project?
+Serve the build locally
+bash
+Copy code
+npm run preview
+📁 Folder Structure (Typical)
+lua
+Copy code
+panda-time/
+├─ public/
+├─ src/
+│  ├─ components/
+│  ├─ pages/
+│  ├─ styles/
+│  └─ main.tsx
+├─ index.html
+├─ tailwind.config.ts
+├─ vite.config.ts
+├─ package.json
+└─ README.md
+❤️ Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to open a Pull Request.
 
-This project is built with:
+📜 License
+This project is released under the MIT License.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
