@@ -7,25 +7,26 @@ import { useTime } from '@/hooks/useTime';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
+// Tamil Nadu cities only
 const AVAILABLE_CITIES: Omit<WorldClockCity, 'id'>[] = [
-  { name: 'New York', timezone: 'America/New_York' },
-  { name: 'Los Angeles', timezone: 'America/Los_Angeles' },
-  { name: 'Chicago', timezone: 'America/Chicago' },
-  { name: 'Toronto', timezone: 'America/Toronto' },
-  { name: 'London', timezone: 'Europe/London' },
-  { name: 'Paris', timezone: 'Europe/Paris' },
-  { name: 'Berlin', timezone: 'Europe/Berlin' },
-  { name: 'Amsterdam', timezone: 'Europe/Amsterdam' },
-  { name: 'Moscow', timezone: 'Europe/Moscow' },
-  { name: 'Dubai', timezone: 'Asia/Dubai' },
-  { name: 'Mumbai', timezone: 'Asia/Kolkata' },
-  { name: 'Singapore', timezone: 'Asia/Singapore' },
-  { name: 'Hong Kong', timezone: 'Asia/Hong_Kong' },
-  { name: 'Tokyo', timezone: 'Asia/Tokyo' },
-  { name: 'Seoul', timezone: 'Asia/Seoul' },
-  { name: 'Sydney', timezone: 'Australia/Sydney' },
-  { name: 'Auckland', timezone: 'Pacific/Auckland' },
-  { name: 'São Paulo', timezone: 'America/Sao_Paulo' },
+  { name: 'Chennai', timezone: 'Asia/Kolkata' },
+  { name: 'Coimbatore', timezone: 'Asia/Kolkata' },
+  { name: 'Madurai', timezone: 'Asia/Kolkata' },
+  { name: 'Tiruchirappalli', timezone: 'Asia/Kolkata' },
+  { name: 'Salem', timezone: 'Asia/Kolkata' },
+  { name: 'Tirunelveli', timezone: 'Asia/Kolkata' },
+  { name: 'Erode', timezone: 'Asia/Kolkata' },
+  { name: 'Vellore', timezone: 'Asia/Kolkata' },
+  { name: 'Thoothukudi', timezone: 'Asia/Kolkata' },
+  { name: 'Dindigul', timezone: 'Asia/Kolkata' },
+  { name: 'Thanjavur', timezone: 'Asia/Kolkata' },
+  { name: 'Tiruppur', timezone: 'Asia/Kolkata' },
+  { name: 'Nagercoil', timezone: 'Asia/Kolkata' },
+  { name: 'Kanchipuram', timezone: 'Asia/Kolkata' },
+  { name: 'Karur', timezone: 'Asia/Kolkata' },
+  { name: 'Hosur', timezone: 'Asia/Kolkata' },
+  { name: 'Cuddalore', timezone: 'Asia/Kolkata' },
+  { name: 'Kumbakonam', timezone: 'Asia/Kolkata' },
 ];
 
 const getDayNightIcon = (hour: number) => {
